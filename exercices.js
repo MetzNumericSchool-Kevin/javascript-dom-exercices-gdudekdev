@@ -26,3 +26,24 @@ const bouttonCall= document.querySelector("#call_archibald");
 bouttonCall.addEventListener("click", ()=>{
     alert("🧙‍♂️ J'arrive, j'arrive Aventurier !");
 });
+
+
+// Faisons un peu de magie
+
+const boites = document.querySelector("#boites_magique");
+const boutonRouge = document.querySelector("#btn_change_red");
+const boutonBleu = document.querySelector("#btn_change_blue")
+const boutonVert = document.querySelector("#btn_change_green")
+
+boutonRouge.addEventListener("click",()=>{
+    boites.children[0].style.backgroundColor="red"
+})
+boutonBleu.addEventListener("click",()=>{
+    boites.children[0].style.backgroundColor="blue"
+    boites.children[1].style.backgroundColor="blue"
+})
+boutonVert.addEventListener("click",()=>{
+    for (let i = 0; i < boites.children.length; i++) {
+        boites.children[i].style.backgroundColor = "green";
+    }
+})
