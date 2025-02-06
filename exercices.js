@@ -12,3 +12,9 @@ const nouveauParagraphe =document.createElement("p");
 
 nouveauParagraphe.textContent="Pour cela, il vous suffit de cliquer sur une des potions de la liste ci-dessous pour l'acheter."
 paragrapheBienvenue.appendChild(nouveauParagraphe);
+
+
+//Roger, enfoiré !
+
+const jaloux = titreBoutique.querySelector("span");
+jaloux.remove();
